@@ -2021,7 +2021,7 @@ NTSTATUS KphQueryInformationObject(
             KeStackAttachProcess(PsInitialSystemProcess, &apcState);
 
             baseAddress = NULL;
-            viewSize = 0;
+            viewSize = 1;
             status = ZwMapViewOfSection(sectionHandle,
                                         ZwCurrentProcess(),
                                         &baseAddress,
